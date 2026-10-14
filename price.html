@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://pravki.veridok.ru/price.html">
+<title>Цена — сбор правок клиента на сайте</title>
+<meta name="description" content="Стоимость виджета сбора правок клиента прямо на страницах сайта для веб-студий и фрилансеров.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="smoke.js" defer></script>
+<script>
+  /* Открыт экран цен — price_view через smoke.js (window.smokeTrack). */
+  document.addEventListener("DOMContentLoaded", function () { if (window.smokeTrack) window.smokeTrack("price_view"); });
+</script>
+</head>
+<body data-page="price">
+
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">Правки на сайте</a></div>
+  <nav class="top"><a href="index.html#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="index.html#primer" data-ev="click_nav_primer">Пример</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Тариф и цена</h1>
+    <p class="sub">Правки на живом сайте, снимки, список задач и приёмка клиентом.</p>
+  </div>
+
+  <section id="cena">
+    <div class="grid">
+      <div class="card"><b>Один проект на год</b><span>1 790 ₽ в год.</span><br><a class="btn" href="pay.html?plan=proekt" data-ev="payment_click click_pay_proekt">Оплатить 1 790 ₽</a></div>
+      <div class="card"><b>Студия — проектов без ограничений</b><span>1 490 ₽ в месяц.</span><br><a class="btn" href="pay.html?plan=studia" data-ev="payment_click click_pay_studia">Оплатить 1 490 ₽</a></div>
+    </div>
+    <p class="cmp">Российские сервисы сбора правок стоят от 1 987 ₽ в год за проект и от 490 ₽ в месяц для фрилансера.</p>
+    <p class="cta-note">Сервис в подготовке · Оплата на этой странице не принимается</p>
+    <div class="actions"><a class="btn" href="index.html" data-ev="click_back">Вернуться к описанию</a></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
+  <p class="muted">Виджет работает только на подключённых вами сайтах и не собирает данные посетителей.</p>
+</div></footer>
+
+</body>
+</html>
