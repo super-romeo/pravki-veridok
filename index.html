@@ -8,6 +8,10 @@
 <meta name="description" content="Для веб-студий и фрилансеров: клиент оставляет правки на страницах сайта со снимком экрана и адресом, правки собираются в список задач.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Правки на сайте</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Правки на сайте</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Клиент оставляет правки прямо на сайте — вы получаете список задач со снимками, а не письма и голосовые</h1>
-    <p class="sub">Для веб-студий и фрилансеров, делающих сайты: подключите виджет к сайту в разработке, клиент кликает на нужное место и пишет замечание, а вы получаете задачу со снимком экрана, браузером, размером окна и адресом страницы. Правки принимаются по одной.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a> <a class="cta" href="price.html" data-ev="click_cena_hero" style="margin-left:8px">Цена</a>
-    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для веб-студий и фрилансеров</p>
+      <h1 class="rise" style="--i:1" data-len="xlong">Клиент оставляет правки прямо на сайте&nbsp;<span class="soft">— вы получаете список задач со снимками, а не письма и голосовые</span></h1>
+      <p class="rise" style="--i:2">Для веб-студий и фрилансеров, делающих сайты: подключите виджет к сайту в разработке, клиент кликает на нужное место и пишет замечание, а вы получаете задачу со снимком экрана, браузером, размером окна и адресом страницы. Правки принимаются по одной.</p>
+      <div class="actions rise" style="--i:3"><a class="button" href="price.html" data-ev="cta_click">Мне это нужно</a><a class="button quiet" href="price.html" data-ev="click_cena_hero">Цена</a></div>
+      <p class="meta rise" style="--i:4">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="160" font-size="36" font-weight="600" fill="#0a1524">Правки на сайте</text><line x1="120" y1="200" x2="1080" y2="200" fill="none" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="250" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="210" y="282" font-size="32" fill="#0a1524">снимок экрана</text><rect x="140" y="350" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="210" y="382" font-size="32" fill="#0a1524">адрес страницы</text><rect x="140" y="450" width="44" height="44" rx="8" fill="#eef2f7" /><text x="210" y="482" font-size="32" fill="#0a1524">браузер</text><rect x="140" y="550" width="44" height="44" rx="8" fill="#eef2f7" /><rect x="210" y="560" width="240" height="24" rx="12" fill="#dde2ea" /><rect x="700" y="250" width="360" height="420" rx="20" fill="#dfe8f7" /><text x="740" y="320" font-size="34" font-weight="600" fill="#0a1524">виджет</text><rect x="740" y="370" width="280" height="150" rx="18" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="770" y="455" font-size="32" fill="#566174">замечание</text></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>Веб-студий и фрилансеров</dd></div>
+      <div><dt>Список</dt><dd>Список задач со снимками</dd></div>
+      <div><dt>Как</dt><dd>Подключите виджет к сайту</dd></div>
+      <div><dt>Доступ</dt><dd>Ранний доступ</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Правки на живом сайте</b><span>Клиент кликает на элемент страницы и пишет замечание, без регистрации.</span><br><a class="btn" href="price.html" data-ev="feature_vidzhet">Мне это нужно</a></div>
-      <div class="card"><b>Снимок и данные</b><span>К каждой правке — снимок экрана, браузер, система, размер окна и адрес страницы.</span><br><a class="btn" href="price.html" data-ev="feature_snimok">Мне это нужно</a></div>
-      <div class="card"><b>Список задач</b><span>Все правки проекта в одном списке: новые, в работе, готово, принято.</span><br><a class="btn" href="price.html" data-ev="feature_zadachi">Мне это нужно</a></div>
-      <div class="card"><b>Приёмка</b><span>Клиент смотрит исправление и принимает правку или возвращает её с комментарием.</span><br><a class="btn" href="price.html" data-ev="feature_priemka">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="100" y="130" font-size="30" font-weight="600" fill="#0a1524">Правки на живом сайте</text><rect x="110" y="180" width="500" height="230" rx="16" fill="#eef2f7" /><rect x="140" y="210" width="280" height="18" rx="8" fill="#dde2ea" /><rect x="140" y="244" width="200" height="18" rx="8" fill="#b9c3d2" /><circle cx="400" cy="340" r="34" fill="#12397a" /><text x="110" y="480" font-size="30" fill="#566174">без регистрации</text></svg></div>
+        <h3>Правки на живом сайте</h3><p>Клиент кликает на элемент страницы и пишет замечание, без регистрации.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_vidzhet">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="100" y="130" font-size="34" font-weight="600" fill="#0a1524">Снимок и данные</text><rect x="100" y="180" width="340" height="300" rx="16" fill="#dfe8f7" /><rect x="130" y="220" width="200" height="16" rx="8" fill="#ffffff" /><rect x="130" y="252" width="150" height="16" rx="8" fill="#ffffff" /><rect x="130" y="300" width="280" height="140" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="470" y="180" width="230" height="300" rx="16" fill="#eef2f7" /><text x="495" y="250" font-size="30" fill="#0a1524">браузер</text><text x="495" y="330" font-size="30" fill="#566174">система</text><rect x="495" y="380" width="160" height="20" rx="10" fill="#b9c3d2" /></svg></div>
+        <h3>Снимок и данные</h3><p>К каждой правке — снимок экрана, браузер, система, размер окна и адрес страницы.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_snimok">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="100" y="130" font-size="36" font-weight="600" fill="#0a1524">Список задач</text><rect x="110" y="180" width="520" height="64" rx="28" fill="#dfe8f7" /><text x="150" y="222" font-size="32" fill="#0a1524">новые</text><rect x="110" y="264" width="520" height="64" rx="28" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="150" y="306" font-size="32" fill="#0a1524">в работе</text><rect x="110" y="348" width="520" height="64" rx="28" fill="#dfe8f7" /><text x="150" y="390" font-size="32" fill="#0a1524">готово</text><circle cx="560" cy="380" r="16" fill="#12397a" /><rect x="110" y="432" width="520" height="64" rx="28" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="150" y="474" font-size="32" fill="#566174">принято</text></svg></div>
+        <h3>Список задач</h3><p>Все правки проекта в одном списке: новые, в работе, готово, принято.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_zadachi">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><circle cx="220" cy="300" r="100" fill="#dfe8f7" /><polyline points="176,300 206,334 270,250" fill="none" stroke="#12397a" stroke-width="8" /><text x="360" y="260" font-size="40" font-weight="600" fill="#0a1524">Приёмка</text><text x="360" y="340" font-size="30" fill="#566174">принимает правку</text></svg></div>
+        <h3>Приёмка</h3><p>Клиент смотрит исправление и принимает правку или возвращает её с комментарием.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_priemka">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">Студия сдаёт сайт клиники. За неделю клиент и двое его коллег оставили 37 правок прямо на страницах. Разработчик видит каждую со снимком и браузером: 5 правок — только в Safari на телефоне. К пятнице 34 правки приняты клиентом, 3 возвращены с уточнением.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выберите тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>Студия сдаёт сайт клиники. За неделю клиент и двое его коллег оставили 37 правок прямо на страницах. Разработчик видит каждую со снимком и браузером: 5 правок — только в Safari на телефоне. К пятнице 34 правки приняты клиентом, 3 возвращены с уточнением.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выберите тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" fill="none" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="960" cy="150" r="22" fill="#12397a" /><text x="240" y="230" font-size="34" font-weight="600" fill="#0a1524" text-anchor="middle">За неделю</text><text x="600" y="230" font-size="34" font-weight="600" fill="#0a1524" text-anchor="middle">37 правок</text><text x="960" y="230" font-size="34" font-weight="600" fill="#0a1524" text-anchor="middle">К пятнице</text><rect x="120" y="320" width="960" height="400" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="420" font-size="36" font-weight="600" fill="#0a1524">приняты клиентом</text><rect x="170" y="480" width="220" height="80" rx="16" fill="#dfe8f7" /><text x="200" y="530" font-size="32" fill="#0a1524">Safari</text><rect x="420" y="500" width="280" height="28" rx="12" fill="#dde2ea" /><rect x="420" y="548" width="180" height="28" rx="12" fill="#b9c3d2" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>Сдача сайта клиенту — самая нервная часть работы веб-студии. Правки приходят письмами, сообщениями в мессенджере, голосовыми и скриншотами с кружочками. Непонятно, о какой странице речь, в каком браузере клиент смотрел и что значит «сделайте покрупнее». Половина времени уходит не на исправления, а на выяснение, что именно нужно исправить.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>Сдача сайта клиенту — самая нервная часть работы веб-студии. Правки приходят письмами, сообщениями в мессенджере, голосовыми и скриншотами с кружочками. Непонятно, о какой странице речь, в каком браузере клиент смотрел и что значит «сделайте покрупнее». Половина времени уходит не на исправления, а на выяснение, что именно нужно исправить.</p>
     <p>Правки на сайте собирают замечания там, где они возникают, — на самих страницах сайта. Вы подключаете виджет к сайту в разработке одной строкой кода или ссылкой. Клиент открывает сайт, нажимает на кнопку виджета, кликает на нужное место страницы и пишет, что не так. Регистрироваться ему не нужно.</p>
     <p>К каждой правке автоматически прикладывается снимок экрана с отмеченным местом, адрес страницы, браузер, операционная система и размер окна. Разработчик сразу видит, что ошибка проявляется только на телефоне в одном браузере, и не тратит время на вопросы.</p>
     <p>Все правки проекта собираются в один список задач. Их можно распределить между разработчиком, дизайнером и копирайтером, отметить статус — новая, в работе, готово — и обсудить в комментариях прямо в задаче. Клиент видит, что его замечание взято в работу.</p>
@@ -105,31 +139,34 @@
     <p>Если клиент оставил замечание, которое выходит за рамки договора, его можно отметить отдельно и обсудить как доработку. Так из правок не вырастают бесконечные доработки без оплаты, а у студии есть понятная история того, что было сделано.</p>
     <p>Когда проект сдан, виджет отключается одним нажатием, и на рабочем сайте клиента не остаётся ничего лишнего.</p>
     <p>Виджет работает только на сайтах, к которым вы его подключили, и не собирает данные посетителей; отключить его можно в любой момент.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Нужно ли клиенту регистрироваться?</h3>
-    <p>Нет. Клиент открывает сайт по ссылке и оставляет правки сразу.</p>
-    <h3>Что прикладывается к правке?</h3>
-    <p>Снимок экрана с отметкой, адрес страницы, браузер, система и размер окна.</p>
-    <h3>Работает ли на любом сайте?</h3>
-    <p>Да, на сайтах на любых платформах, к которым вы подключили виджет.</p>
-    <h3>Может ли клиент принять правку?</h3>
-    <p>Да, после исправления клиент принимает её или возвращает с комментарием.</p>
-    <h3>Можно ли пользоваться уже сейчас?</h3>
-    <p>Пока нет. Сервис в подготовке, мы проверяем, нужен ли он студиям.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Нужно ли клиенту регистрироваться?</h3><p>Нет. Клиент открывает сайт по ссылке и оставляет правки сразу.</p></div>
+      <div class="split flip"><h3>Что прикладывается к правке?</h3><p>Снимок экрана с отметкой, адрес страницы, браузер, система и размер окна.</p></div>
+      <div class="split flip"><h3>Работает ли на любом сайте?</h3><p>Да, на сайтах на любых платформах, к которым вы подключили виджет.</p></div>
+      <div class="split flip"><h3>Может ли клиент принять правку?</h3><p>Да, после исправления клиент принимает её или возвращает с комментарием.</p></div>
+      <div class="split flip"><h3>Можно ли пользоваться уже сейчас?</h3><p>Пока нет. Сервис в подготовке, мы проверяем, нужен ли он студиям.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Подключите первый сайт</h2>
-    <p><label>Сколько сайтов вы сдаёте в год<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>1–5</option><option>6–20</option><option>21–50</option><option>Больше 50</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Подключить сайт</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Подключите первый сайт</h2>
+    </div>
+    <div class="tile stack">
+      <label>Сколько сайтов вы сдаёте в год<select data-ev-focus="form_start"><option value="">— выберите —</option><option>1–5</option><option>6–20</option><option>21–50</option><option>Больше 50</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Подключить сайт</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Правки на сайте</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Виджет работает только на подключённых вами сайтах и не собирает данные посетителей.</p>
+  <p>Виджет работает только на подключённых вами сайтах и не собирает данные посетителей.</p>
 </div></footer>
 
 </body>
